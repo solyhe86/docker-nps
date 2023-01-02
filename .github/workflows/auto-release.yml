@@ -56,8 +56,8 @@ jobs:
           sed -i "/NPS_VERSION/s/$CURRENT/$LATEST/g" Dockerfile
           sed -i "/latest/a - $LATEST" README.md
           # commit and push
-          git config user.email zxf2342@qq.com
-          git config user.name zhangsean
+          git config user.email solyhe86@gmail.com
+          git config user.name solyhe86
           git commit -a -m "Bump to nps $LATEST"
           git push
           git tag "$LATEST"
